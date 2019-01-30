@@ -16,7 +16,6 @@ https://github.com/KyonDevelopment/JQB/tree/master/
 new Bot()
 	.setPrefix("!")
 	.addCommand(new Command("test") {
-	
 		@Override
 		public void onCommand(Member member, Message message, String aliasUsed, String[] args) {
 			message.getChannel().sendMessage("this works!").queue();
