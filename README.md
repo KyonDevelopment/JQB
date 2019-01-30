@@ -14,15 +14,15 @@ https://github.com/KyonDevelopment/JQB/tree/master/
 
 ```java
 new Bot()
-		.setPrefix("!")
-		.addCommand(new Command("test") {
-			
-			@Override
-			public void onCommand(Member member, Message message, String aliasUsed, String[] args) {
-				message.getChannel().sendMessage("this works!").queue();
-			}
-		})
-		.build("Token");
+	.setPrefix("!")
+	.addCommand(new Command("test") {
+	
+		@Override
+		public void onCommand(Member member, Message message, String aliasUsed, String[] args) {
+			message.getChannel().sendMessage("this works!").queue();
+		}
+	})
+	.build("Token");
 ```
 
 ## Contributing
